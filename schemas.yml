@@ -1,12 +1,12 @@
 models:
-  - name: pydiggs
+  - pydiggs
     ## custom tests
-  - name: california_custom_arcgis_boreholes
+  - california_custom_arcgis_boreholes
     ## custom tests    
-  - name: inclinometers
-    tests:
-      - at_least_one_row
-    columns:
-      - name: Depth_m
-        tests:
-          - not_null
+  - inclinometers:
+      tests:
+        - at_least_one_row
+      columns:
+        - name: Depth_m
+          tests:
+            - not_null
