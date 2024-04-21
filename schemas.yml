@@ -1,0 +1,8 @@
+models:
+  - name: inclinometers
+    tests:
+      - at_least_one_row
+    columns:
+      - name: Depth_m
+        tests:
+          - not_null
