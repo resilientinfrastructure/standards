@@ -1,12 +1,21 @@
 models:
-  - pydiggs
-    ## custom tests
-  - california_custom_arcgis_boreholes
-    ## custom tests    
-  - inclinometers:
-      tests:
-        - at_least_one_row
-      columns:
-        - name: Depth_m
-          tests:
-            - not_null
+  - name: pydiggs
+    url: https://www.geoinstitute.org/special-projects/diggs/
+    tests:
+    # custom tests
+    - at_least_one_row
+
+  - name: california_custom_arcgis_boreholes
+    url: http://services2.arcgis.com/zr3KAIbsRSUyARHG/arcgis/rest/services/CGSBoreholeDB/FeatureServer
+    tests:
+    # custom tests
+    - at_least_one_row
+
+  - name: inclinometers
+    url: https://www.hyd.gov.hk/en/our_projects/road_projects/hzmb_projects/tmclkl/index.html
+    tests:
+      - at_least_one_row
+    columns:
+      - name: Depth_m
+        tests:
+          - not_null
