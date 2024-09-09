@@ -1,7 +1,27 @@
 schema_type: dataframe
 version: 0.20.4
 columns:
+  AccNumber:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
   AreaCode:
+    title: null
+    description: null
+    dtype: str
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  City:
     title: null
     description: null
     dtype: str
@@ -26,6 +46,46 @@ columns:
     description: null
     dtype: str
     nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  GeogScheme5:
+    title: null
+    description: null
+    dtype: str
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  Latitude:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  LocDed6All:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  LocLimit2Other:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
     checks: null
     unique: false
     coerce: false
@@ -71,6 +131,16 @@ columns:
     coerce: false
     required: true
     regex: false
+  Longitude:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
   NumberOfBuildings:
     title: null
     description: null
@@ -82,6 +152,26 @@ columns:
     required: true
     regex: false
   NumberOfStoreys:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  OtherTIV:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  PostalCode:
     title: null
     description: null
     dtype: int64
